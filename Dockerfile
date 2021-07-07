@@ -2,7 +2,7 @@
 #this image will be the lastest.
 FROM gitlab/gitlab-ee:latest
 #addign some label.
-LABEL description="This is a custome image of Gitlab"
+LABEL description="This is a Generic image of Gitlab"
 #Defining variables for the ports we are gonna use.
 #Using \ to separate each environment variables. It is a best practice.
 ENV PORT_HTTPS=443 \
