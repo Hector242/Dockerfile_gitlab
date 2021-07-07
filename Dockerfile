@@ -10,3 +10,6 @@ MAINTAINER Hector Sanchez hectorm242@gmail.com
 ENV PORT_HTTPS=443 \
     PORT_HTTP=80 \
     PORT_SSH=22
+EXPOSE ${PORT_HTTPS} \
+       ${PORT_HTTP}  \
+       ${PORT_SSH}
