@@ -13,3 +13,7 @@ ENV PORT_HTTPS=443 \
 EXPOSE ${PORT_HTTPS} \
        ${PORT_HTTP}  \
        ${PORT_SSH}
+#All GitLab data will be stored as subdirectories of $GITLAB_HOME
+VOLUME $GITLAB_HOME/config:/etc/gitlab \
+      $GITLAB_HOME/logs:/var/log/gitlab \
+      $GITLAB_HOME/data:/var/opt/gitlab 
