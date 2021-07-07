@@ -3,5 +3,5 @@ This is a Dockerfile that create a gitlab image. This information was taken from
 
 # Before start 
 
- Setup the volumes location.
+ Set up the volumes location. \
  Normaly just use a environment variable pointing to a directory where all git information will reside. 
