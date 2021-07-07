@@ -12,6 +12,6 @@ EXPOSE ${PORT_HTTPS} \
        ${PORT_HTTP}  \
        ${PORT_SSH}
 #All GitLab data will be stored as subdirectories of $GITLAB_HOME
-VOLUME $GITLAB_HOME/config:/etc/gitlab \
-      $GITLAB_HOME/logs:/var/log/gitlab \
-      $GITLAB_HOME/data:/var/opt/gitlab 
+VOLUME $GITLAB/config:/etc/gitlab \
+      $GITLAB/logs:/var/log/gitlab \
+      $GITLAB/data:/var/opt/gitlab 
