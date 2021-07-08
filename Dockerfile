@@ -3,6 +3,7 @@
 FROM gitlab/gitlab-ee:latest
 #addign some label.
 LABEL description="This is a Generic image of Gitlab"
+MAINTAINER Hector Sanchez
 #Defining variables for the ports we are gonna use.
 #Using \ to separate each environment variables. It is a best practice.
 ENV PORT_HTTPS=443 \
