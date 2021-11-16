@@ -13,7 +13,3 @@ ENV PORT_SSH=22
 EXPOSE ${PORT_HTTPS}
 EXPOSE ${PORT_HTTP}
 EXPOSE ${PORT_SSH}
-#All GitLab data will be stored as subdirectories of $GITLAB_HOME
-VOLUME /srv/gitlab/config:/etc/gitlab
-VOLUME /srv/gitlab/logs:/var/log/gitlab
-VOLUME /srv/gitlab/data:/var/opt/gitlab 
